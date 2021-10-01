@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 100vh;
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+/* ===================================
+                HEADER
+=================================== */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #eaf0f1af;
+  box-shadow: 0 2px 4px 0 #00000033;
+  height: 80px;
+  width: 100%;
+}
+
+.logo_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+}
+
+i {
+  color:#1595ac;
+  font-size: 50px;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+h1 > a {
+  color: #2ba8be;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li > a {
+  color: #2ba8be;
+  font-weight: 700;
+}
+
+.menu_links {
+  list-style: none;
+  margin-left: 75px;
+}
+
+.menu_links:hover {
+  border-bottom: 5px solid #2ba8be85;
+  padding-bottom: 8px;
+}
+
+/* ===================================
+                MAIN
+=================================== */
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  padding: 0 80px;
+  min-height: calc(100vh - 80px - 150px)
+}
+
+.main_mod_paciente {
+  padding-top: 20px;
+}
+
+.main_mod_odontologo {
+  padding-top: 50px;
+}
+
+h2, h3 {
+  color: #2baec5;
+}
+
+h3 {
+  padding-bottom: 5px;
+}
+
+.main_menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+}
+
+h5 {
+  color: #72c1c7;
+  padding-bottom: 10px;
+}
+
+.Id {
+  border: 2px solid #2baec5;
+}
+
+.main_results{
+  width: 800px;
+}
+
+.main_results h2 {
+  font-size: 26px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.main_results h3{
+  padding-bottom: 10px;
+}
+
+.box input {
+  margin-bottom: 30px;
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: none;
+  border-bottom: 2px solid #7cb6c0;
+  outline: none;
+}
+
+.box input[type="submit"] {
+  font-size: 1.1em;
+  border-bottom: none;
+  cursor: pointer;
+  background: #b0cacc;
+  color: #fff;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.box form div {
+  position: relative;
+}
+
+.box form div label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #7bcacf;
+  pointer-events: none;
+  transition: 0.5s;
+  text-transform: none;
+}
+
+.box input:focus ~ label, .box input:valid ~ label {
+  top: -12px;
+  left: 0;
+  color: #60a3a8;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.box input:focus ~ label,.box input:valid {
+  border-bottom: 2px solid #7fa9ac;
+}
+
+.mensaje {
+  margin-top: 10px;
+  visibility:hidden;
+}
+
+.mensajeb {
+  background-color: #b0cacc;
+  margin-top: 5px;
+  padding: 5px;
+  visibility: hidden;
+}
+
+button {
+  display: block;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 40px;
+  margin: 0 auto;
+  background-color: #9ee5f1;
+  cursor: pointer;
+  color: #2e587a;
+  font-weight: 700;
+}
+
+button:hover{
+  background-color: #4aced3;
+  color: #ffffff;
+  transition: .5s;
+}
+
+
+/* ===================================
+  FOOTER
+=================================== */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-content:space-around;
+  background-color: #2ba8be85;
+  color: white;
+  padding: 30px 200px 15px;
+  height: 150px;
+}
+
+footer h4 {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.menu-ul{
+/*   margin-bottom: 30px; */
+  text-align: center;
+  line-height: 20px;
+}
+
+.menu-ul li{
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.menu-ul li a{
+  color: white;
+  text-decoration:none;
+  text-transform: none;
+}

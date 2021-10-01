@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./styles/registroPacientes.css" rel="stylesheet" />
+        <title>Clínica Odontológica</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo_section">
+                    <i class="fas fa-user-nurse"></i>
+                    <h1><a href="index.html">Clínica Odontológica LV</a></h1>
+                </div>
+                <ul class="menu">
+                    <li class="menu_links"><a href="listarPacientes.html">Pacientes</a></li>
+                    <li class="menu_links"><a href="listarOdontologos.html">Odontólogos</a></li>
+                    <li class="menu_links"><a href="listarTurnos.html">Turnos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2 class="subtitle_turno">Registro Nuevo Turno</h2>
+            <form id="form">
+                <div>
+                    <input
+                            type="text"
+                            name="odontologo"
+                            class="odontologo"
+                            required
+                            placeholder=" "
+                    />
+                    <label>ID Odontólogo</label>
+                </div>
+                <div>
+                    <input type="text" name="" class="paciente" required placeholder=" " />
+                    <label>ID Paciente</label>
+                </div>
+                <div>
+                    <input
+                            type="datetime-local" class="fecha"
+                            name="fecha"
+                    />
+                    <label class="label_fh">Fecha y Hora</label>
+                </div>
+                <button id="submit" type="submit" value="Registrar">Registrar</button>
+            </form>
+            <h5 class="mensaje">Turno registrado con éxito</h5>
+        </main>
+
+        <footer>
+            <ul class="menu-ul">
+                <h4>Pacientes</h4>
+                <li><a href="./registroPacientes.html">Registrar</a></li>
+                <li><a href="./buscarPaciente.html">Buscar por ID</a></li>
+                <li><a href="./modificarPaciente.html">Modificar</a></li>
+            </ul>
+            <ul class="menu-ul">
+                <h4>Odontólogos</h4>
+                <li><a href="./registroOdontologos.html">Registrar</a></li>
+                <li><a href="./buscarOdontologo.html">Buscar por ID</a></li>
+                <li><a href="./modificarOdontologos.html">Modificar</a></li>
+            </ul>
+            <ul class="menu-ul">
+                <h4>Turnos</h4>
+                <li><a href="./registroTurno.html">Registrar</a></li>
+                <li><a href="./buscarTurno.html">Buscar por ID</a></li>
+                <li><a href="./modificarTurno.html">Modificar</a></li>
+            </ul>
+        </footer>
+        <script src="/scripts/registroTurno.js"></script>
+    </body>
+
+</html>

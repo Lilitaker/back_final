@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url(../resources/pexels-daniel-frank-305568.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100vw;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* ===================================
+                HEADER
+=================================== */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #eaf0f1af;
+    box-shadow: 0 2px 4px 0 #00000033;
+    height: 80px;
+}
+
+.logo_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+
+i {
+    color:#1595ac;
+    font-size: 50px;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h1 > a {
+    color: #2ba8be;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li > a {
+    color: #2ba8be;
+    font-weight: 700;
+}
+
+.menu_links {
+    list-style: none;
+    margin-left: 75px;
+}
+
+.menu_links:hover {
+    border-bottom: 5px solid #2ba8be85;
+    padding-bottom: 8px;
+}
+
+
+/* ===================================
+                 MAIN
+=================================== */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:inset 0 0 0 2000px #faeef54d;
+    min-height: calc(100vh - 80px - 150px);
+}
+
+h2 {
+    padding: 20px;
+    border-radius: 0 14px 14px 0;
+    background-color:#2ba8be85;
+    color:white;
+    text-transform: capitalize;
+}
+
+
+/* ===================================
+                FOOTER
+=================================== */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-content:space-around;
+    background-color: #2ba8be85;
+    color: white;
+    padding: 30px 200px 15px;
+    height: 150px;
+}
+
+footer h4 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.menu-ul{
+  /*   margin-bottom: 30px; */
+    text-align: center;
+    line-height: 20px;
+}
+
+.menu-ul li{
+    font-size: 0.9rem;
+    list-style: none;
+}
+
+.menu-ul li a{
+    color: white;
+    text-decoration:none;
+    text-transform: none;
+}
+

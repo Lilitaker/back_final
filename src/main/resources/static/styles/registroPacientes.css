@@ -1,0 +1,202 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 100vh;
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+
+/* ===================================
+                HEADER
+=================================== */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #eaf0f1af;
+  box-shadow: 0 2px 4px 0 #00000033;
+  height: 80px;
+}
+
+.logo_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+}
+
+i {
+  color:#1595ac;
+  font-size: 50px;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+h1 > a {
+  color: #2ba8be;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li > a {
+  color: #2ba8be;
+  font-weight: 700;
+}
+
+.menu_links {
+  list-style: none;
+  margin-left: 75px;
+}
+
+.menu_links:hover {
+  border-bottom: 5px solid #2ba8be85;
+  padding-bottom: 8px;
+}
+
+
+/* ===================================
+                MAIN
+=================================== */
+
+main {
+  margin-top: 50px;
+  min-height: calc(100vh - 80px - 200px);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
+  color: #2baec5;
+}
+
+.subtitle_turno {
+  padding-top: 100px;
+}
+
+h3 {
+  margin-bottom: 15px;
+  color: #2baec5;
+}
+
+label {
+  text-transform: none;
+}
+
+button {
+  display: block;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 40px;
+  margin: 0 auto;
+  background-color: #9ee5f1;
+  cursor: pointer;
+  color: #2e587a;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #4aced3;
+  color: #ffffff;
+  transition: .5s;
+}
+
+input {
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #7cb6c0;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+form div {
+  position: relative;
+}
+
+form div label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #7bcacf;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input:focus ~ label, textarea:valid ~ label {
+  top: -12px;
+  left: 0;
+  color: #60a3a8;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+input:focus ~ label, textarea:focus ~ label {
+  border-bottom: 2px solid #7fa9ac;
+}
+
+.label_fh:focus ~ label {
+  padding-bottom: 30px;
+}
+
+.fecha {
+  padding-top: 25px;
+}
+
+.mensaje{
+  margin-top: 10px;
+  visibility:hidden;
+}
+
+/* ===================================
+                FOOTER
+=================================== */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-content:space-around;
+  background-color: #2ba8be85;
+  color: white;
+  padding: 30px 200px 15px;
+  height: 150px;
+}
+
+footer h4 {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.menu-ul{
+/*   margin-bottom: 30px; */
+  text-align: center;
+  line-height: 20px;
+}
+
+.menu-ul li{
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.menu-ul li a{
+  color: white;
+  text-decoration:none;
+  text-transform: none;
+}
